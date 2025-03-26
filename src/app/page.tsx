@@ -5,12 +5,15 @@ import { OrbitControls } from '@react-three/drei';
 import { Suspense, useState } from 'react';
 import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
-import AboutMe from '@/components/AboutMe';
-import MilestoneLabel from '@/components/MilestoneLabel';
-import SocialLinks from '@/components/SocialLinks';
-import Navigation from '@/components/Navigation';
-import { Phone, Mail, Linkedin, Github } from 'lucide-react';
+import Navigation from "@/components/Navigation";
+import AboutMe from "@/components/AboutMe";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import SocialLinks from "@/components/SocialLinks";
 import Typewriter from 'typewriter-effect';
+import { Phone, Mail, Linkedin, Github } from 'lucide-react';
+import MilestoneLabel from '@/components/MilestoneLabel';
 
 // Define professional milestones
 const milestones = [
@@ -60,13 +63,16 @@ export default function Home() {
               <span className="text-xl sm:text-2xl md:text-3xl text-white/80">Hi, I'm</span>
               <div className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
                 <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .typeString('Abdullah Ahmad')
+                      .pauseFor(1000)
+                      .deleteAll()
+                      .start();
+                  }}
                   options={{
-                    strings: ['Abdullah Ahmad'],
-                    autoStart: true,
                     loop: true,
-                    delay: 30,
-                    deleteSpeed: 30,
-                    pauseFor: 1000,
+                    autoStart: true,
                   }}
                 />
               </div>
