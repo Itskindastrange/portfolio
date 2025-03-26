@@ -45,7 +45,7 @@ export default function Home() {
         <SocialLinks />
         
         {/* Hero Section */}
-        <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-black/40 backdrop-blur-sm">
+        <section id="hero" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-black/20">
           <div className="max-w-7xl mx-auto text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -77,13 +77,13 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
                 <a
                   href="#contact"
-                  className="px-6 py-3 bg-blue-600/90 hover:bg-blue-700 rounded-lg font-medium transition-colors text-center backdrop-blur-sm"
+                  className="px-6 py-3 bg-blue-600/80 hover:bg-blue-700 rounded-lg font-medium transition-colors text-center"
                 >
                   Get in Touch
                 </a>
                 <a
                   href="#projects"
-                  className="px-6 py-3 border border-blue-400/50 hover:bg-blue-600/20 rounded-lg font-medium transition-colors text-center backdrop-blur-sm"
+                  className="px-6 py-3 border border-blue-400/50 hover:bg-blue-600/20 rounded-lg font-medium transition-colors text-center"
                 >
                   View Projects
                 </a>
