@@ -10,6 +10,7 @@ import MilestoneLabel from '@/components/MilestoneLabel';
 import SocialLinks from '@/components/SocialLinks';
 import Navigation from '@/components/Navigation';
 import { Phone, Mail, Linkedin, Github } from 'lucide-react';
+import TypewriterEffect from "react-typewriter-effect";
 
 // Define professional milestones
 const milestones = [
@@ -64,40 +65,53 @@ export default function Home() {
           </Canvas>
         </div>
         <div className="relative z-10 text-center px-4">
-          <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4"
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="space-y-6"
           >
-            Abdullah Ahmad
-          </motion.h1>
-          <motion.p 
-            className="text-xl md:text-2xl text-white/80 mb-8"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Developer | Machine Learning & AI Enthusiast
-          </motion.p>
-          <motion.div 
-            className="flex flex-wrap justify-center gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <a href="tel:+923114739994" className="text-white/60 hover:text-white transition-colors">
-              <Phone className="w-5 h-5" />
-            </a>
-            <a href="mailto:abdullahahmaddd789@gmail.com" className="text-white/60 hover:text-white transition-colors">
-              <Mail className="w-5 h-5" />
-            </a>
-            <a href="https://www.linkedin.com/in/abdullah-ahmad-ab7b19229/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
-            <a href="https://github.com/itskindastrange" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors">
-              <Github className="w-5 h-5" />
-            </a>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white flex flex-col items-center">
+              <span className="text-xl sm:text-2xl md:text-3xl text-white/80">Hi, I'm</span>
+              <TypewriterEffect
+                textStyle={{
+                  fontFamily: "inherit",
+                  fontSize: "inherit",
+                  fontWeight: "inherit",
+                  color: "transparent",
+                  background: "linear-gradient(to right, #60a5fa, #a855f7)",
+                  backgroundClip: "text",
+                  WebkitBackgroundClip: "text",
+                  textAlign: "center",
+                  display: "inline-block",
+                  width: "100%",
+                  minHeight: "1.2em",
+                }}
+                multiText={["Abdullah Ahmad"]}
+                multiTextDelay={1000}
+                typeSpeed={30}
+                multiTextLoop={true}
+                cursorColor="#60a5fa"
+                cursorWidth={3}
+              />
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-white/80 max-w-3xl mx-auto px-4">
+              Developer | AI Enthusiast | Problem Solver
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
+              <a
+                href="#contact"
+                className="px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-medium transition-colors text-center"
+              >
+                Get in Touch
+              </a>
+              <a
+                href="#projects"
+                className="px-6 py-3 border border-blue-600 hover:bg-blue-600/10 rounded-lg font-medium transition-colors text-center"
+              >
+                View Projects
+              </a>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -236,7 +250,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold text-white">Bitcoin Price Prediction</h3>
                 <a 
-                  href="https://github.com/itskindastrange/btcprice"
+                  href="https://github.com/Itskindastrange/Bitcoin-Price-Predection"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/60 hover:text-white transition-colors"
@@ -265,7 +279,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold text-white">Static Bug Analysis</h3>
                 <a 
-                  href="https://github.com/itskindastrange/buganalysis"
+                  href="https://github.com/Itskindastrange/Static-Bug-Analysis-Using-LLMs"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/60 hover:text-white transition-colors"
@@ -323,7 +337,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold text-white">Secure Blockchain Voting System</h3>
                 <a 
-                  href="https://github.com/itskindastrange/voting"
+                  href="https://github.com/Itskindastrange/Blockchain-Voting-System"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white/60 hover:text-white transition-colors"
@@ -334,6 +348,35 @@ export default function Home() {
               <p className="text-white/60 mb-4">A decentralized voting platform built on blockchain technology for secure and transparent elections.</p>
               <div className="flex flex-wrap gap-2">
                 {['Solidity', 'Web3.js', 'React', 'Node.js'].map((tech) => (
+                  <span key={tech} className="px-3 py-1 bg-white/5 rounded-full text-sm text-white/80">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Cold Email Generator */}
+            <motion.div
+              className="bg-black/30 backdrop-blur-sm rounded-lg p-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+            >
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-xl font-semibold text-white">Cold Email Generator</h3>
+                <a 
+                  href="https://github.com/Itskindastrange/Cold-Email-Generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/60 hover:text-white transition-colors"
+                >
+                  <Github className="w-5 h-5" />
+                </a>
+              </div>
+              <p className="text-white/60 mb-4">An AI-powered tool that generates personalized cold emails using LangChain and vector embeddings for better outreach effectiveness.</p>
+              <div className="flex flex-wrap gap-2">
+                {['Python', 'LangChain', 'Vector Embeddings', 'Next.js'].map((tech) => (
                   <span key={tech} className="px-3 py-1 bg-white/5 rounded-full text-sm text-white/80">
                     {tech}
                   </span>
