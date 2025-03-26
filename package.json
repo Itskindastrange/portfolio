@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-icons": "^5.5.0",
     "react-typewriter-effect": "^1.1.0",
-    "three": "^0.161.0"
+    "three": "^0.161.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.19",
