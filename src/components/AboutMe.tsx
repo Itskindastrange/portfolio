@@ -36,22 +36,23 @@ export default function AboutMe() {
           </div>
         </motion.div>
         <motion.div
-          className="space-y-6 text-white/80"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <p className="text-base md:text-lg leading-relaxed">
-            I am a <span className="text-blue-400 font-semibold">Machine Learning and AI enthusiast</span> with a strong passion for <span className="text-blue-400 font-semibold">autonomous systems, self-driving technology, and deep learning</span>. My experience includes working on <span className="text-blue-400 font-semibold">computer vision, super-resolution, and automation projects</span>, such as <span className="text-blue-400 font-semibold">Urdu Text Restore</span>, where I fine-tune <span className="text-blue-400 font-semibold">GANs and CNN-based models</span> to enhance degraded Urdu text images.
-          </p>
-          <p className="text-base md:text-lg leading-relaxed">
-            I have also built <span className="text-blue-400 font-semibold">AI-driven automation tools</span>, including a <span className="text-blue-400 font-semibold">cold email generator</span> and a <span className="text-blue-400 font-semibold">static bug analysis system using LLMs</span>. With a keen interest in <span className="text-blue-400 font-semibold">research and academia</span>, I aim to pursue a <span className="text-blue-400 font-semibold">Career in AI/ML</span> while exploring <span className="text-blue-400 font-semibold">cutting-edge advancements in robotics and automation</span>.
-          </p>
-          <p className="text-base md:text-lg leading-relaxed">
-            Beyond tech, I am passionate about <span className="text-blue-400 font-semibold">automobiles, aviation, networking, and cooking</span>.
-          </p>
-        </motion.div>
+  className="space-y-6 text-white/80"
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+>
+  <p className="text-base md:text-lg leading-relaxed">
+    I’m a passionate learner and builder in the domain of <span className="text-blue-400 font-semibold">Artificial Intelligence, Machine Learning, and Data Science</span>, with a strong fascination for <span className="text-blue-400 font-semibold">robotics, autonomous systems, and AI on hardware</span>. I'm especially drawn to the intersection of intelligence and real-world interaction, where algorithms don’t just predict, but act.
+  </p>
+  <p className="text-base md:text-lg leading-relaxed">
+    My curiosity drives me to explore how intelligent systems can perceive, decide, and move, whether through <span className="text-blue-400 font-semibold">self-driving technology, robotics, or edge AI applications</span>. I love diving deep into <span className="text-blue-400 font-semibold">deep learning, computer vision, and data-driven automation</span>, always striving to build systems that learn, adapt, and improve.
+  </p>
+  <p className="text-base md:text-lg leading-relaxed">
+    Beyond tech, I find joy in <span className="text-blue-400 font-semibold">automobiles, aviation, connecting with like-minded people, and experimenting in the kitchen</span>. I’m a firm believer in lifelong learning and pushing boundaries, both technically and personally.
+  </p>
+</motion.div>
+
       </div>
     </div>
   );

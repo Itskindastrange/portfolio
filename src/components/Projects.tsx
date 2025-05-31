@@ -101,8 +101,37 @@ export default function Projects() {
               ))}
             </div>
           </motion.div>
+
+          {/* Static Bug Analysis Using LLMs */}
+          <motion.div
+            className="bg-black/30 backdrop-blur-sm rounded-lg p-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
+            <div className="flex justify-between items-start mb-4">
+              <h3 className="text-xl font-semibold text-white">Static Bug Analysis Using LLMs</h3>
+              <a 
+                href="https://github.com/Itskindastrange/Static-Bug-Analysis-Using-LLMs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+              >
+                <Github className="w-5 h-5" />
+              </a>
+            </div>
+            <p className="text-white/60 mb-4">A research project that fine-tunes large language models to identify software bugs statically without code execution. It combines prompt engineering and model benchmarking for smart code diagnostics.</p>
+            <div className="flex flex-wrap gap-2">
+              {['Python', 'LLMs', 'Transformers', 'Hugging Face', 'Prompt Engineering'].map((tech) => (
+                <span key={tech} className="px-3 py-1 bg-white/5 rounded-full text-sm text-white/80">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
   );
-} 
+}

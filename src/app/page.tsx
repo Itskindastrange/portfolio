@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Navigation from "@/components/Navigation";
 import AboutMe from "@/components/AboutMe";
+import Experience from "@/components/Experience";
 import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
@@ -93,6 +94,7 @@ export default function Home() {
         </section>
         
         <AboutMe />
+        <Experience />
         <Skills />
         <Projects />
         <Contact />
