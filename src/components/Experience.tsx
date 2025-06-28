@@ -5,10 +5,22 @@ import { motion } from 'framer-motion';
 export default function Experience() {
   const experiences = [
     {
+      title: "AI Engineer",
+      company: "Analytiverse",
+      location: "Lahore, Pakistan",
+      period: "June 2025 – Present",
+      responsibilities: [
+        "Evaluated prompt responses and output quality of LLMs.",
+        "Created high quality, curated datasets for LLM fine-tuning and supervised learning tasks.",
+        "Developed Python scripts to automate LLM output validation, unit testing, and prompt-code pair evaluation.",
+        "Analyzed model behavior to detect edge cases, hallucinations, and failure patterns, delivering robust input-output pipelines to support AI model improvement."
+      ]
+    },
+    {
       title: "Generative AI Intern",
       company: "Systems Limited",
       location: "Lahore, Pakistan",
-      period: "April 2025 – Present",
+      period: "April 2025 – June 2025",
       responsibilities: [
         "Contributed to the development of an AI-powered developer productivity tool using LLMs",
         "Implemented intelligent code completions and real-time bug detection and analysis using LLMs",
